@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var nome = prompt("Qual é o seu nome?")
+    document.write(`Seu nome é ${nome}, composto por ${nome.length} letras<br>`)
+    document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}<br>`)
+    document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br>`)
+
+    //Comando abaixo não funcionou para colocar R$ na frente do número
+    
+    var n1 = prompt("Agora, digite seu salário") 
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    document.write(`Seu salário é ${n1}`)
+</script>
+</html>
